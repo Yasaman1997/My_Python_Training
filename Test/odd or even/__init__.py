@@ -3,3 +3,15 @@ check = int(input("give me a number to divide by: \n"))
 
 if num%check == 0:
    print( num, "is a multiple of " , check)
+
+
+
+
+   me = "YASAMAN"
+   print(me.lower())
+
+
+
+
+
+
