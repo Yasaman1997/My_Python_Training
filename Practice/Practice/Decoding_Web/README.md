@@ -1,4 +1,7 @@
 
+How it was Done:
+
+
 Decode A Web Page Solutions
 The How To Decode A Website exercise was a challenging one, involving many complex pieces of code and two new Python modules. When appropaching problems like this one, it helps to develop a plan for the program before executing it.
 
