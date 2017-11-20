@@ -50,41 +50,5 @@ This returns a list of all tags with story-heading as a class. What we need to d
   for story_heading in soup.find_all(class_="story-heading"):
     print(story_heading)
   <h2 class="story-heading">...
-If you scroll through the list of outputs, they come in two varieties:
 
-Links
-Not links
-When we loop through the lines with story-heading, we need to take this difference into account using more BeautifulSoup magic:
 
-   for story_heading in soup.find_all(class_="story-heading"): 
-    if story_heading.a: 
-        print(story_heading.a)
-    else: 
-        print(story_heading)
-To see this output:
-
-  <a href="http://www.nytimes.com/2014/07/11/...
-And then remove the text from the link and the title from the list of contents:
-
-   for story_heading in soup.find_all(class_="story-heading"): 
-    if story_heading.a: 
-        print(story_heading.a.text)
-    else: 
-        print(story_heading.contents[0])
-  Germans Order Expulsion of Top U.S. Spy in Espionage Case
-  Death Toll Rises in Gaza, as Hamas Hits New Targets in Israel
-  ...
-We are almost there! The only thing missing is the formatting - if you scroll through the list of outputs, the formatting of some titles farther down the list. There are an excess of spaces, so stripping the strings and replating all instances of new lines and tabs with regular spaces should do the trick. Take a look at the Python string methods documentation.
-
-And this is how we get lines 8 through 12:
-
-  for story_heading in soup.find_all(class_="story-heading"): 
-    if story_heading.a: 
-        print(story_heading.a.text.replace("\n", " ").strip())
-    else: 
-        print(story_heading.contents[0].strip())
-And we have our list of titles!
-
-  Germans Order Expulsion of Top U.S. Spy in Espionage Case
-  Death Toll Rises in Gaza, as Hamas Hits New Targets in Israel
-  ...
