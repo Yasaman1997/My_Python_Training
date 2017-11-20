@@ -1,4 +1,4 @@
-My solution
+ solution
 
 In the previous exercise, I saved birthday information in a slightly different format, so I had to use a slightly different method to extract the months. In my dictionary, the birthdays were saved in the format “MM/DD/YYYY”, or the standard date format we use in the US. My birthdays.json file looked like this:
 
