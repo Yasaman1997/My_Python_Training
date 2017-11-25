@@ -1,6 +1,7 @@
 
 This is my training at:
-http://www.practicepython.org/
+
+<PracticePython>(http://www.practicepython.org/)
 
 
-try it it's fun!
+**Try it,it's fun!
