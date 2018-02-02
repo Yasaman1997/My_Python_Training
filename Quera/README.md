@@ -1,1 +1,1 @@
-These are (Quera)[https://quera.ir/] contests
+These are [Quera](https://quera.ir/) contests
